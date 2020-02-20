@@ -1,0 +1,24 @@
+<div *ngIf="libro" class="card my-5">
+    <div class="card-body">
+        
+        <div class="card-text">
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input disabled id="titulo" type="text" [(ngModel)]="libro.titulo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor:</label>
+                <input disabled id="autor" type="text" [(ngModel)]="libro.autor" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="copiasDisponibles">Copias Disponibles:</label>
+                <input disabled id="copiasDisponibles" type="number" [(ngModel)]="libro.copiasDisponibles" class="form-control">
+            </div>
+                 
+            <div class="form-group">
+                
+                <input id="PrestarLibro" type="submit" value="Prestar Libro"  class="form-control">
+            </div>
+        
+    </div>
+</div>

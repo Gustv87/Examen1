@@ -1,0 +1,19 @@
+<div class="table">
+    <table class="table-hover">
+        <thead>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Copias Disponibles</th>
+        </thead>
+        <tbody>
+            <tr (click)='seleccion(libro)' *ngFor='let libro of libros'>
+                <td>{{libro.titulo}}</td>
+                <td>{{libro.autor}}</td>
+                <td>{{libro.copiasDisponibles}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<app-libro-detalle [libro]="seleccionLibro" ></app-libro-detalle>
